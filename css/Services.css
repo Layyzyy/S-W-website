@@ -1,0 +1,741 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                                  /***************************** NAVBAR CSS FILE *****************************/
+
+body {
+    background-color: #F9FBFD;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    color: #F9FBFD;
+    font-weight: bold;
+    font-size: 1.75rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+header {
+    display: flex;
+    background-color: #0078BF;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 4px solid #0b2d5b;
+    align-items: center;
+    gap: 10em;
+    justify-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    position: sticky;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.navbox {
+    text-decoration: none;
+    color: #F9FBFD;
+}
+.search {
+    background-color: #F9FBFD;
+    padding: 10px 80px;
+    border-radius: 20px;
+    border-bottom: #0b2d5b;
+    border-right: #0b2d5b;
+    box-shadow: 6px 5px 1px 1px #0b2d5b;
+    transition: all 0.1s ease;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+}
+.search:hover {
+    box-shadow: none;
+    transform: translate(4px, 2px);
+    border: 2px solid #0b2d5b;
+}
+.navbox1 {
+    text-decoration: none;
+    color: #0b2d5b;
+    font-weight: bold;
+}
+
+                                /******************* page starts ******************/
+
+
+.medical-services {
+    display: flex;
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 1px 6px 0px black;
+    margin-top: 50px;
+}
+.medical-services:hover {
+    box-shadow: 0px 1px 8px 0px black;
+}
+.medical-image {
+    flex: 1;
+}
+
+.medical-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.services-section {
+    flex: 1;
+    background-color: #e6f2ff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.appointment-btn, .find-care-btn {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.appointment-btn {
+    background-color: #0066cc;
+    color: white;
+}
+
+
+.find-care-btn {
+    background-color: transparent;
+    color: #0066cc;
+    border: 2px solid #0066cc;
+}
+
+
+                            /********************** details ***********************/
+
+.cleveland-info {
+    background-color: #e6f2ff;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 50px 0;
+}
+
+.cleveland-info h2 {
+    color: #0066cc;
+    font-size: 38px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cleveland-info p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+
+
+                        /*********************** services ***********************/
+
+.services-container {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.service-box {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0px 1px 6px 0px black;
+}
+.service-box:hover {
+    box-shadow: 0px 1px 8px 0px black;
+}
+.service-box h2 {
+    color: #0066cc;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e6f2ff;
+    text-align: center;
+}
+
+.services-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #333;
+    font-size: 16px;
+}
+
+.services-list li:last-child {
+    border-bottom: none;
+}
+
+.services-list li:hover {
+    color: #0066cc;
+    cursor: pointer;
+}                         
+
+
+
+                    /********************* service next page ***********************/
+.services-container1 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.service-box1 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: stretch;
+}
+
+.service-box1:hover {
+    transform: translateY(-5px);
+}
+
+.service-image {
+    width: 30%;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 25px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-content h3 {
+    color: #0066cc;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.service-content p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+.service-btn {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.service-btn:hover {
+    background-color: #0052a3;
+}
+
+                            /*********************************** appointment page starts ***********************/
+
+.grey-container {
+    background-color: #f5f5f5;
+    padding: 30px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.info-box {
+    width: 31%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h3 {
+    color: #0066cc;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e6f2ff;
+    padding-bottom: 10px;
+}
+
+.info-box p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-size: 26px;
+
+}
+
+.info-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    border-top: 2px solid black;
+}
+
+.info-links li {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-links a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.info-links a:hover {
+    text-decoration: underline;
+}
+
+                            /***************************** footer******************************/
+
+footer {
+    background-color: #0078BF;
+    margin-top: 50px;
+    border-top: 4px solid #0b2d5b;
+}
+footer .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 390px;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.footer-section {
+    flex: 1;
+    width: 200px;
+    margin-bottom: 40px;
+    padding: 0 15px;
+}
+.footer-section h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #F9FBFD;
+    position: relative;
+    padding-bottom: 10px;
+}
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    color: #F9FBFD;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.footer-section ul li a:hover {
+    color: #62c6fc;
+    transform: translateX(5px);
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(249, 251, 253, 0.2);
+    padding-top: 20px;
+}
+.copyright {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #F9FBFD;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+.social-icons a {
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F9FBFD ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
+
+.social-icons a img {
+    height: 50px;
+}
+
+
+
+
+                                        /*********************responsive **************************/
+
+                                        
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        gap: 1.2em;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .search {
+        padding: 8px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .search {
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .medical-services {
+        width: 95%;
+    }
+}
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+@media (max-width: 992px) {
+    .medical-services {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .medical-image {
+        height: 300px;
+    }
+
+    .services-section {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cleveland-info h2 {
+        font-size: 28px;
+    }
+
+    .cleveland-info p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .services-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-box {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .service-box1 {
+        flex-direction: column;
+    }
+
+    .service-image,
+    .service-content {
+        width: 100%;
+    }
+
+    .service-content h3 {
+        font-size: 30px;
+    }
+
+    .service-content p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .grey-container {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .info-box {
+        width: 100%;
+    }
+
+    .info-box h3 {
+        font-size: 24px;
+    }
+
+    .info-box p {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    footer .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-content {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand {
+        font-size: 1.4rem;
+    }
+
+    .services-section h2 {
+        font-size: 24px;
+    }
+
+    .appointment-btn,
+    .find-care-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+
+* {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 992px) {
+    .medical-services {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .service-box1 {
+        height: auto;
+    }
+
+    .service-content {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .grey-container {
+        height: auto;
+    }
+
+    .info-box {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .service-content h3 {
+        font-size: 28px;
+    }
+
+    .service-content p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .info-box h3 {
+        font-size: 22px;
+    }
+
+    .info-box p {
+        font-size: 17px;
+    }
+
+    .cleveland-info p {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .service-content h3 {
+        font-size: 24px;
+    }
+
+    .service-content p,
+    .info-box p {
+        font-size: 16px;
+    }
+}
+
+
+
+@media (min-width: 993px) {
+    .medical-services {
+        height: auto;
+        min-height: 500px;
+    }
+}
+
+
+@media (min-width: 993px) {
+    .grey-container {
+        height: auto;
+        min-height: 500px;
+        align-items: stretch;
+    }
+
+    .info-box {
+        height: auto;
+    }
+}
+
+
+@media (min-width: 993px) {
+    .service-content,
+    .info-box,
+    .cleveland-info {
+        overflow: hidden;
+    }
+}

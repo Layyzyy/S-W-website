@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                               /**************************** NAVBAR CSS FILE *****************************/
+
+body {
+    background-color: #f5f5f5;
+
+}
+.brand{
+    display: flex;
+    align-items: center;
+    color: #F9FBFD;
+    font-weight: bold;
+    font-size: 1.75rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+
+}
+header {
+    display: flex;
+    background-color: #0078BF;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 4px solid #0b2d5b;
+    align-items: center;
+    gap: 10em;
+    justify-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    position: sticky;
+
+}
+nav ul {
+    display: flex;
+    gap: 8em;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.navbox {
+    text-decoration: none;
+    color: #F9FBFD;
+}
+
+
+                        /*******************page starts**********************/
+
+
+.search-container {
+    background-color: #f5f5f5;
+    padding: 80px 20px;
+    text-align: center;
+    height: 500px;
+}
+
+.search-title {
+    color: #333;
+    font-size: 60px;
+    margin-bottom: 25px;
+    font-weight: normal;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.search-box {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    font-size: 30px;
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #999;
+    font-size: 30px;
+}
+
+.search-btn {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #0052a3;
+}
+
+
+
+
+                            /***************************** footer******************************/
+
+footer {
+    background-color: #0078BF;
+    margin-top: 50px;
+    border-top: 4px solid #0b2d5b;
+}
+footer .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 390px;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.footer-section {
+    flex: 1;
+    width: 200px;
+    margin-bottom: 40px;
+    padding: 0 15px;
+}
+.footer-section h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #F9FBFD;
+    position: relative;
+    padding-bottom: 10px;
+}
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    color: #F9FBFD;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.footer-section ul li a:hover {
+    color: #62c6fc;
+    transform: translateX(5px);
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(249, 251, 253, 0.2);
+    padding-top: 20px;
+}
+.copyright {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #F9FBFD;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+.social-icons a {
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F9FBFD ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
+
+.social-icons a img {
+    height: 50px;
+}
+
+
+                                        /*********************responsive **************************/
+
+
+@media (min-width: 1025px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 3em;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        gap: 3em;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-box {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer .container {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        height: auto;
+    }
+}
+@media (max-width: 1024px) {
+
+    header {
+        flex-wrap: wrap;
+        gap: 2.5em;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 2.5em;
+    }
+
+    .search-box {
+        width: 90%;
+        height: 80px;
+    }
+
+    .search-input,
+    .search-input::placeholder {
+        font-size: 24px;
+    }
+
+    footer .container {
+        width: 95%;
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 1.5em;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1.2em;
+    }
+
+    .brand {
+        font-size: 1.5rem;
+    }
+
+    .search-container {
+        padding: 60px 15px;
+        height: auto;
+    }
+
+    .search-title {
+        font-size: 38px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .search-input,
+    .search-input::placeholder {
+        font-size: 20px;
+    }
+
+    .search-btn {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .search-title {
+        font-size: 28px;
+    }
+
+    .search-input,
+    .search-input::placeholder {
+        font-size: 18px;
+    }
+
+    .search-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1112px) {
+
+    header {
+        padding-left: 3%;
+        padding-right: 3%;
+        gap: 2em;
+    }
+
+    nav ul {
+        gap: 2em;
+    }
+
+    .search-box {
+        width: 95%;
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    footer .container {
+        width: 95%;
+        max-width: none;
+        margin: 0 auto;
+    }
+}
